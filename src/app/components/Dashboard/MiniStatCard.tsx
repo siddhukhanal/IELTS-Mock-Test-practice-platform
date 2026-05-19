@@ -10,6 +10,7 @@ interface MiniProps {
   Icon: IconType;
   bgColor: string;
   iconColor: string;
+
 }
 
 const MiniStatCard = ({ title, score, trend, isUp, Icon, bgColor, iconColor }: MiniProps) => {

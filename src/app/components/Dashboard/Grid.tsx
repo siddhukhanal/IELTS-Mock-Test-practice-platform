@@ -10,15 +10,15 @@ import RecentTests from './RecentTests'
 
 const Grid = () => {
   return (
-    <div className="bg-stone-100 px-4 grid gap-4 grid-cols-12 mt-4">
+    <div className="bg-stone-100 px-4 grid gap-4 grid-cols-12 m">
       <div className="col-span-12 lg:col-span-3">
         <OverallProgressCard score={6.5} />
       </div>
       <div className="col-span-12 lg:col-span-6 grid grid-cols-2 lg:grid-cols-4 gap-4 ">
-        <MiniStatCard title="Reading" score={7.5} trend={8.5} Icon={FiBookOpen} color="bg-purple-100" iconColor="text-purple-600" />
-        <MiniStatCard title="Writing" score={7} trend={8.5} Icon={FiEdit3} color="bg-yellow-100" iconColor="text-yellow-600" />
-        <MiniStatCard title="Speaking" score={6.5} trend={3.5} Icon={FiMic} color="bg-emerald-100" iconColor="text-emerald-600" />
-        <MiniStatCard title="Listening" score={6} trend={8.5} Icon={FiHeadphones} color="bg-orange-100" iconColor="text-orange-600" />
+        <MiniStatCard title="Reading" score={7.5} trend={8.5} isUp={true} Icon={FiBookOpen} bgColor="bg-purple-100" iconColor="text-purple-600" />
+        <MiniStatCard title="Writing" score={7} trend={8.5} isUp={true} Icon={FiEdit3} bgColor="bg-yellow-100" iconColor="text-yellow-600" />
+        <MiniStatCard title="Speaking" score={6.5} trend={3.5} isUp={false} Icon={FiMic} bgColor="bg-emerald-100" iconColor="text-emerald-600" />
+        <MiniStatCard title="Listening" score={6} trend={8.5} isUp={false} Icon={FiHeadphones} bgColor="bg-orange-100" iconColor="text-orange-600" />
       </div>
       <div className="col-span-12 lg:col-span-3">
         <PracticeSmarterCard />
