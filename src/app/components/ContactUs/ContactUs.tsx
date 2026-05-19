@@ -15,8 +15,8 @@ export default function ContactSection() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto my-6 bg-white rounded-xl p-6 shadow-sm">
-  <div className="form-section grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div className="max-w-4xl mx-auto my-6 bg-white rounded-xl p-6 shadow-sm items-center justify-center flex">
+  <div className="form-section grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center flex">
 
     {/* FORM */}
     <form

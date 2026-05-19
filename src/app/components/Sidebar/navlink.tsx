@@ -9,6 +9,7 @@ const ICON_SIZE = 28;
 const NavLink = () => {
     const links = [
         { name: 'Home', href: '/dashboard', icon: MdHome },
+        { name: 'practice', href: '/dashboard/practice', icon: MdTrendingUp },
         // { name: 'Grid', href: '/grid'},
         // { name: 'Home', href: '/practice'},
         // { name: 'Home', href: '/results'},
